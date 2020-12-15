@@ -697,8 +697,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 956388931}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 0.5, z: -7.5516524}
+  m_LocalRotation: {x: -0, y: -0, z: -0.000018350314, w: 1}
+  m_LocalPosition: {x: 0.3699342, y: 0.42998612, z: -7.551652}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2139067088}
@@ -711,7 +711,7 @@ Transform:
   - {fileID: 1478852694}
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.002}
 --- !u!61 &956388933
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -750,7 +750,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c69cf39e8a5804ac1a33404d343247a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 5
+  EnemyBullet: {fileID: 0}
 --- !u!50 &956388935
 Rigidbody2D:
   serializedVersion: 4

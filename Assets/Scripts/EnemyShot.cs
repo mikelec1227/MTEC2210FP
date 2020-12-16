@@ -6,6 +6,7 @@ public class EnemyShot : MonoBehaviour
 {
   private Transform EnemyBullet;
   public float speed;
+  private Transform EnemyFleet;
 
 
     // Start is called before the first frame update
@@ -17,8 +18,8 @@ public class EnemyShot : MonoBehaviour
     // Update is called once per frame
     void fixedUpdate()
     {
-      EnemyBullet.position += Vector3.down;
-      if (EnemyBullet.position.y <= 10)
+      EnemyBullet.position += Vector3.down * -speed;
+      if (EnemyBullet.position.y <= -10)
       Destroy(EnemyBullet.gameObject);
 
     }
@@ -30,4 +31,5 @@ public class EnemyShot : MonoBehaviour
         Destroy(gameObject);
       }
     }
-}
+
+    }

@@ -6,6 +6,7 @@ using UnityEngine;
 public class EnemyScript : MonoBehaviour  {
 private bool dirRight = true;
 public float speed = 2.0f;
+public float shotRate = 0.5f;
 private Transform EnemyFleet;
 public GameObject EnemyBullet;
 
@@ -29,6 +30,11 @@ void Update () {
   if(transform.position.x <= -4) {
       dirRight = true;
         }
-        Instantiate(EnemyBullet);
+
+if (Random.value > shotRate)
+{
+  Instantiate(EnemyBullet);
+}
+
     }
 }
